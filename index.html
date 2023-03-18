@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>California Intrepid Tourist</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+  <style>
+    /* Styles for screens larger than md */
+    .my-class {
+      font-size: 24px;
+    }
+
+    /* Styles for screens smaller than md */
+    @media (max-width: 200.98px) {
+      .my-class {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="font-variant-east-asian: jis78;">California Intrepid Tourist</h1> 
+        <h2 style="font-size:1.0em;">Top Travel Destinations in California</h2>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+          </head>
+          <body>
+          
+          <h2 style="text-align: center;">California Destinations</h2> 
+          
+        
+          <div class="slideshow-container">
+          
+          <div class="mySlides fade">
+            <img src="https://www.gannett-cdn.com/-mm-/1abbac059a7e6f21ff3aa7e38760a41a48819119/c=0-217-2118-1414/local/-/media/2018/08/17/USATODAY/USATODAY/636701422865855661-GettyImages-632216604.jpg"  width="1000" height="500 style="width:100%">
+            <div class="text">Alcatraz Island</div>
+          </div>
+          
+          <div class="mySlides fade">
+           
+            <img src="https://madera.objects.liquidweb.services/photos/16162-yosemite-spring-2019-mist-trail-and-others-lr-Header-1400x612.jpg"  width="1000" height="500 style="width:100%">
+            <div class="text">Yosmite National Park </div>
+          </div>
+          
+          <div class="mySlides fade">
+            
+            <img src="https://www.wanderlustchloe.com/wp-content/uploads/2022/03/Lake-Tahoe-in-summer.png"  width="1000" height="500="300style="width:100%">
+            <div class="text">Lake Tahoe</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+            let slideIndex = 0;
+            showSlides();
+          
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 7000); // Change image every 7 seconds
+            }
+          </script>
+          
+        <footer>
+          <p style="text-align: center; font-size: medium;">From the pristine waters of Lake Tahoe to the towering cliffs of Yosemite to the rugged beauty of the Channel Islands, each of these locations offers something special to its guests.</p>
+        </div> </p>
+        </footer>
+      </main>
+      <aside>
+        <div class="left">
+          <img src="https://www.wanderlustchloe.com/wp-content/uploads/2022/03/Lake-Tahoe-in-summer.png" alt="Lake Tahoe in Summer" style="height: 300px;">
+          <footer>
+            <p style="height: 120px;">Lake Tahoe: Located in the Sierra Nevada mountains, Lake Tahoe is a large freshwater lake that straddles the border between California and Nevada. The lake is known for its crystal-clear waters, beautiful beaches, and stunning mountain scenery. Visitors can enjoy hiking, skiing, water sports, and other outdoor activities.</p>
+          </footer>
+        </div>
+        <div class="middle">
+          <img src="https://www.adventurousway.com/images/i/58l9tl9ff5c7/2048w/national-parks/channel-islands-national-park/channel-islands-national-park.jpeg" alt="Channel Islands National Park" style="height: 300px;">
+          <footer>
+            <p style="height: 120px;">The Channel Islands are a group of eight islands located off the coast of Southern California. The islands are known for their rugged beauty, unique flora and fauna, and excellent opportunities for hiking, camping, kayaking, and other outdoor activities. Visitors can also explore the islands' rich history, including its Chumash Indian heritage and its role in World War II.</p>
+          </footer>
+        </div>
+        <div class="right">
+          <img src="https://nypost.com/wp-content/uploads/sites/2/2023/01/Untitled-1.jpg?quality=75&strip=all" alt="Golden Gate Bridge" style="height: 300px;">
+          <footer>
+            <p style="height: 120px;">Yosemite is a vast wilderness area that is located in the Sierra Nevada mountains. The park is well-known for the towering granite cliffs, waterfalls, and massive sequoia trees that can be found within its boundaries. Visitors have the opportunity to enjoy a variety of outdoor pursuits, including rock climbing, hiking, and more during their time at the park.</p>
+          </footer>
+        </div>
+      </aside>
+      </main>
+      <footer>
+        <p style="text-align: center; font-size: medium;">The Queen Mary, Alcatraz Island, and the Winchester Mystery House are all popular tourist attractions in California with interesting histories and legends.</p>
+      </div></p>
+      </footer>
+    </div>
+  </body>
+</html>
+</main>
+<aside>
+  <div class="left">
+    <img src="https://media.vanityfair.com/photos/541c9def1019a3955fea24d0/1:1/pass/s-queen-mary-cop.jpg" alt="Queen Mary" height="300">
+    <footer>
+      <p style="height: 101px;">Located in Long Beach, the Queen Mary is a retired ocean liner that is now a floating hotel. It is said to be haunted by several ghosts, including a woman who died in the ship's pool and a young girl who was killed in a tragic accident.</p>
+    </footer>
+  </div>
+  <div class="middle">
+    <img src="https://a.cdn-hotels.com/gdcs/production154/d1196/328cc337-bee3-4d43-8913-9013ac0f1120.jpg" alt="Alcatraz Island Prison" height="300">
+    <footer>
+      <p style="height: 100px;">It is said that the infamous Alcatraz Island Prison, which is located in San Francisco Bay, is haunted by the spirits of both former inmates and guards who served there. Strange noises, cold spots, and the feeling that they were being watched have all been reported by guests.</p>
+    </footer>
+  </div>
+  <div class="right">
+    <img src="https://www.treehugger.com/thmb/XJ1cejVrX03t3YESK2MwFREeweU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2018__02__WinchesterHouseFront-849571a2d3d74450b55c6273b5e48f13.jpg" alt="Winchester Mystery House" height="200">
+    <footer>
+      <p style="height: 100px;">This peculiar San Jose mansion was erected by Sarah Winchester, the widow of the man who invented the Winchester rifle. The mansion is haunted by the ghosts of those who were killed by the rifles, and it features odd staircases and doors that lead to empty rooms.</p>
+    </footer>
+  </div>
+</aside>
+</main>
+<footer>
+  <p style="text-align: center; font-size: medium;"> Monterey Bay Aquarium, Disneyland, and Universal Studios Hollywood are all popular tourist attractions in California with something for visitors of all ages.
+
+  </p>
+</div> </p>
+</footer>
+</main>
+<aside>
+  <div class="left">
+    <img src="https://www.themagicforless.com/wp-content/uploads/2022/05/Disneyland_Park.jpg" alt="Disneyland Park">
+    <footer>
+      <p>One of the most frequented tourist destinations in California is the theme park known as Disneyland, which can be found in Anaheim. The amusement park provides guests with a wide selection of rides and attractions, in addition to dining options, live entertainment, and retail outlets.</p>
+    </footer>
+  </div>
+  
+  <div class="middle">
+    <img src="https://www.montereybayaquarium.org/globalassets/mba/images/buildings/exteriors/tr20-0026.jpg" alt="Monterey Bay Aquarium">
+    <footer>
+      <p>The Monterey Bay Aquarium is home to a wide variety of marine life, some of which includes sea otters, sharks, and penguins. Visitors have the opportunity to participate in educational programs and events, as well as explore the exhibits and interactive displays housed within the aquarium.</p>
+    </footer>
+  </div>
+  
+  <div class="right">
+    <img src="https://www.travelandleisure.com/thmb/_xIGXDKbv4GEBb36cl3xzbma6EQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/header-entrance-universal-studios-hollywood-UNIHWOOD0522-0146bbcbdc3b4b28be357a6d53dfd68e.jpg" alt="Universal Studios Hollywood">
+    <footer>
+      <p>Universal Studios Hollywood is a movie-themed amusement park located in Universal City. Visitors can enjoy a variety of rides and attractions based on popular movies and TV shows, as well as studio tours and live shows. The park also features a variety of dining and shopping options, as well as seasonal events.</p>
+    </footer>
+  </div>
+  
+    </footer>
+  </div>
+</aside>
+</main>
+

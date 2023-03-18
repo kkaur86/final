@@ -1,0 +1,86 @@
+body {
+	background-color: white;
+	color: black;
+}
+
+header, footer {
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+/* Style the navigation links */
+nav {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 5px;
+  }
+  nav ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  nav li {
+	display: inline-block;
+	width: 150px;
+	border: 2px solid #000000;
+	line-height: 3em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+	font-variant: small-caps;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-right: 10px;
+  }
+  nav a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+  }
+  nav a:hover {
+	background-color: #000000;
+	color: #ffffff;
+  }
+  nav .active {
+	background-color:  #ffffff;
+	color: #000000;
+  }
+
+form {
+	margin-top: 1em;
+}
+
+label {
+	display: block;
+	margin-top: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: white;
+	padding: 0.5em 1em;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+}

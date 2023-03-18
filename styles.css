@@ -1,0 +1,794 @@
+<style>
+		/* Styles for screens larger than md */
+		.my-class {
+			font-size: 24px;
+		}
+
+		/* Styles for screens smaller than md */
+		@media (max-width: 267.98px) {
+			.my-class {
+				font-size: 16px;
+			}
+			header {
+				padding: 10px;
+			}
+			h1 {
+				font-size: 2em;
+			}
+			h2 {
+				font-size: 1.5em;
+			}
+			nav ul {
+				flex-direction: column;
+				align-items: center;
+			}
+			nav li {
+				margin: 10px 0;
+			}
+			nav a {
+				font-size: 1.2em;
+			}
+			aside div {
+				display: block;
+			}
+			aside .left img {
+				height: 200px;
+			}
+			aside .left p {
+				height: auto;
+			}
+			aside .middle img {
+				height: 200px;
+			}
+			aside .middle p {
+				height: auto;
+			}
+			footer p {
+				font-size: 0.9em;
+			}
+		}
+	</style>
+
+<style>
+* { box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+div.container {
+border: 5px solid #000000;
+width: 100%;
+margin: 0;
+}
+header{
+background-color: #000000;
+color: #ffffff;
+text-align: center;
+padding: 20px;
+font-weight: bold;
+font-size: 30px;
+letter-spacing: 2px;
+}
+.hero img{
+width: 100%;
+border: 10px solid #000000;
+}
+div.left, div.middle, div.right {
+border: 2px solid #000000;
+width: 30%;
+display: inline-block;
+}
+aside img {
+width: 100%;
+height: auto;
+}
+aside{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+nav {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  width: 150px;
+  border: 2px solid #000000;
+  line-height: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+nav .active {
+  background-color:  #ffffff;
+  color: #000000;
+}
+
+main {
+margin-bottom: 0px;
+}
+footer {
+text-align: center;
+background-color: #000000;
+color: #ffffff;
+padding: 20px;
+font-size: 18px;
+letter-spacing: 1px;
+/* Media Queries */
+}@media only screen and (max-width: 768px) {
+  div.left, div.middle, div.right {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  header {
+    font-size: 24px;
+  }
+  .hero img {
+    border: 5px solid #000000;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    font-size: 18px;
+  }
+  li {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+</style>
+
+}<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+div.container {
+  border: 5px solid #000000;
+  width: 100%;
+  margin: 0;
+}
+header{
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+
+}
+.hero img{
+  width: 100%;
+  border: 10px solid #000000;
+}
+div.left, div.middle, div.right {
+  border: 2px solid #000000;
+  width: 40%;
+  display: inline-block;
+}
+aside img {
+  width: 100%;
+}
+aside{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+nav {
+  background-color: #000000;
+  text-align: center;
+  padding: 5px;
+}
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  width: 150px;
+  border: 2px solid #000000;
+  line-height: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+main {
+  margin-bottom: 0px;
+}
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  div.left, div.middle, div.right {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 24px;
+  }
+  li {
+    width: 100%;
+  }
+}
+</style>
+
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    div.container {
+      border: 5px solid #000000;
+      width: 100%;
+      margin: 0;
+    }
+    header{
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 2px;
+    
+    }
+    .hero img{
+      width: 100%;
+      border: 10px solid #000000;
+    }
+    div.left, div.middle, div.right {
+      border: 2px solid #000000;
+      width: 40%;
+      display: inline-block;
+    }
+    aside img {
+      width: 100%;
+    }
+    aside{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    nav {
+      background-color: #000000;
+      text-align: center;
+      padding: 5px;
+    }
+    ul {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      width: 150px;
+      border: 2px solid #000000;
+      line-height: 3em;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+      font-variant: small-caps;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-right: 10px;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+    main {
+      margin-bottom: 0px;
+    }
+    footer {
+      text-align: center;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    </style>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #0e0101;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color: #0e0101;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #0e0101;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #000000;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px
+    }
+  }
+
+  /* Adjust text size */
+  .left p, .middle p, .right p {
+    font-size: 14px;
+  }
+</style>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="left">
+      <img src="https://www.wanderlustchloe.com/wp-content/uploads/2022/03/Lake-Tahoe-in-summer.png" alt="Lake Tahoe in Summer">
+      <footer>
+        <p>Located in the Sierra Nevada mountains, Lake Tahoe is a large freshwater lake that straddles the border between California and Nevada. The lake is known for its crystal-clear waters, beautiful beaches, and stunning mountain scenery. Visitors can enjoy hiking, skiing, water sports, and other outdoor activities.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="middle">
+      <img src="https://www.adventurousway.com/images/i/58l9tl9ff5c7/2048w/national-parks/channel-islands-national-park/channel-islands-national-park.jpeg" alt="Channel Islands National Park">
+      <footer>
+        <p>The Channel Islands
+
+
+
+
+        <style>
+        /* CSS code for screens smaller than 600px */
+        @media (max-width: 600px) {
+          /* adjust the layout of the navigation bar */
+          nav {
+            display: block;
+            margin-top: 20px;
+          }
+          nav ul li {
+            display: block;
+            margin-bottom: 10px;
+          }
+          nav ul li a {
+            display: inline-block;
+            padding: 5px 10px;
+          }
+          /* adjust the layout of the slideshow */
+          .slideshow-container {
+            width: 100%;
+          }
+          .mySlides img {
+            height: auto;
+          }
+        }
+      </style>
+    </head>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <body>
+      <div class="container">
+        <header>
+          <h1 style="font-variant-east-asian: jis78;">California Intrepid Tourist</h1> 
+          <h2 style="font-size:1.0em;">Top Travel Destinations in California</h2>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <main>
+          <h2 style="text-align: center;">California Destinations</h2> 
+          <div class="slideshow-container">
+          @media screen and (min-width: 768px) {
+            .slideshow-container {
+              max-width: 800px;
+              margin: 0 auto;
+            }
+
+            <div class="mySlides fade">
+              <img src="https://www.gannett-cdn.com/-mm-/1abbac059a7e6f21ff3aa7e38760a41a48819119/c=0-217-2118-1414/local/-/media/2018/08/17/USATODAY/USATODAY/636701422865855661-GettyImages-632216604.jpg"  width="1000" height="500 style="width:100%">
+              <div class="text">Alcatraz Island</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://madera.objects.liquidweb.services/photos/16162-yosemite-spring-2019-mist-trail-and-others-lr-Header-1400x612.jpg"  width="1000" height="500 style="width:100%">
+              <div class="text">Yosmite National Park </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.wanderlustchloe.com/wp-content/uploads/2022/03/Lake-Tahoe-in-summer.png"  width="1000" height="500="300style="width:100%">
+              <div class="text">Lake Tahoe</div>
+            </div>
+          </div>
+          <br>
+            
+          <div style
+          <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+div.container {
+  border: 5px solid #000000;
+  width: 100%;
+  margin: 0;
+}
+header{
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.hero img{
+  width: 100%;
+  border: 10px solid #000000;
+}
+div.left, div.middle, div.right {
+  border: 2px solid #000000;
+  width: 40%;
+  display: inline-block;
+}
+aside img {
+  width: 100%;
+}
+aside{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+nav {
+  background-color: #000000;
+  text-align: center;
+  padding: 5px;
+}
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  width: 150px;
+  border: 2px solid #000000;
+  line-height: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+main {
+  margin-bottom: 0px;
+}
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+</style>
+
+
+
+
+
+
+
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  div.container {
+    border: 5px solid #000000;
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .hero img {
+    width: 100%;
+    border: 10px solid #000000;
+  }
+
+  div.left,
+  div.middle,
+  div.right {
+    border: 2px solid #000000;
+    width: 40%;
+    display: inline-block;
+  }
+
+  aside img {
+    width: 100%;
+  }
+
+  aside,
+  nav {
+    background-color: #000000;
+    text-align: center;
+    padding: 5px;
+  }
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    width: 150px;
+    border: 2px solid #000000;
+    line-height: 3em;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 10px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+  nav .active,
+  a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  main {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    div.left,
+    div.middle,
+    div.right {
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+    }
+    header {
+      font-size: 24px;
+    }
+    .hero img {
+      border: 5px solid #000000;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    header {
+      font-size: 18px;
+    }
+    li {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+</style>
+  /* default styles for all div elements */
